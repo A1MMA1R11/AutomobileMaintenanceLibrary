@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AutomobileMaintenanceLibrary",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AutomobileMaintenanceLibrary::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AutomobileMaintenanceLibrary-Debug-859d28203c1782bd6468.json",
+					"name" : "AutomobileMaintenanceLibrary",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build",
+		"source" : "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

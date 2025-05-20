@@ -1,0 +1,3 @@
+C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/CMakeFiles/AutomobileMaintenanceLibrary.dir
+C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/CMakeFiles/edit_cache.dir
+C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/CMakeFiles/rebuild_cache.dir

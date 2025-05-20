@@ -1,0 +1,47 @@
+Automobile Maintenance Library UML Class Diagram
+
+1. Automobile (Base Class)
+- make: std::string
+- model: std::string
+- year: int
+- odometerReading: int
++ getMake(): std::string
++ getModel(): std::string
++ getYear(): int
++ getOdometerReading(): int
++ setOdometerReading(int): void
++ virtual displayInfo(): void
+
+2. ElectricCar (Derived from Automobile)
+- batteryCapacity: double
++ displayInfo(): void
+
+3. GasCar (Derived from Automobile)
+- fuelTankCapacity: double
++ displayInfo(): void
+
+4. DieselCar (Derived from Automobile)
+- fuelTankCapacity: double
++ displayInfo(): void
+
+5. MaintenanceTask (Base Class)
+- taskName: std::string
+- description: std::string
+- applicableVehicleTypes: std::vector<std::string>
++ isApplicableTo(std::string vehicleType): bool
++ getTaskName(): std::string
++ getDescription(): std::string
+
+6. MaintenanceLibrary
+- vehicles: std::vector<std::shared_ptr<Automobile>>
+- maintenanceTasks: std::map<std::shared_ptr<Automobile>, std::vector<std::shared_ptr<MaintenanceTask>>>
++ addVehicle(std::shared_ptr<Automobile>): void
++ removeVehicle(std::shared_ptr<Automobile>): void
++ listVehicles(): void
++ addMaintenanceTask(std::shared_ptr<Automobile>, std::shared_ptr<MaintenanceTask>): void
++ removeMaintenanceTask(std::shared_ptr<Automobile>, std::shared_ptr<MaintenanceTask>): void
++ listMaintenanceTasks(std::shared_ptr<Automobile>): void
+
+Notes:
+- Error handling will be implemented in all methods to handle invalid inputs and operations.
+- Use smart pointers for memory management.

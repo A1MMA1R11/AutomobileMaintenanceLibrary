@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/AutomobileMaintenanceLibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/AutomobileMaintenanceLibrary.dir/main.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/main.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/main.cpp",
+  "output": "CMakeFiles/AutomobileMaintenanceLibrary.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/AutomobileMaintenanceLibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/AutomobileMaintenanceLibrary.dir/src/Automobile.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/Automobile.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/Automobile.cpp",
+  "output": "CMakeFiles/AutomobileMaintenanceLibrary.dir/src/Automobile.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/AutomobileMaintenanceLibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceTask.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/MaintenanceTask.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/MaintenanceTask.cpp",
+  "output": "CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceTask.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/AutomobileMaintenanceLibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceLibrary.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/MaintenanceLibrary.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/MaintenanceLibrary.cpp",
+  "output": "CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceLibrary.cpp.obj"
+}
+]
