@@ -24,31 +24,4 @@ public:
     virtual void displayInfo() const;
 };
 
-class ElectricCar : public Automobile {
-private:
-    double batteryCapacity;
-
-public:
-    ElectricCar(const std::string& make, const std::string& model, int year, int odometerReading, double batteryCapacity);
-    void displayInfo() const override;
-};
-
-class GasCar : public Automobile {
-private:
-    double fuelTankCapacity;
-
-public:
-    GasCar(const std::string& make, const std::string& model, int year, int odometerReading, double fuelTankCapacity);
-    void displayInfo() const override;
-};
-
-class DieselCar : public Automobile {
-private:
-    double fuelTankCapacity;
-
-public:
-    DieselCar(const std::string& make, const std::string& model, int year, int odometerReading, double fuelTankCapacity);
-    void displayInfo() const override;
-};
-
 #endif // AUTOMOBILE_H

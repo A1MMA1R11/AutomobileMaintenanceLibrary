@@ -1,4 +1,7 @@
-#include "include/MaintenanceLibrary.h"
+#include "../include/MaintenanceLibrary.h"
+#include "../include/ElectricCar.h"
+#include "../include/GasCar.h"
+#include "../include/DieselCar.h"
 #include <iostream>
 #include <algorithm>
 #include <stdexcept>

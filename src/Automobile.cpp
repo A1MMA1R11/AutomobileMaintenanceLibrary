@@ -1,4 +1,7 @@
-#include "include/Automobile.h"
+#include "../include/Automobile.h"
+#include "../include/DieselCar.h"
+#include "../include/ElectricCar.h"
+#include "../include/GasCar.h"
 #include <iostream>
 #include <stdexcept>
 
@@ -36,8 +39,7 @@ void Automobile::setOdometerReading(int newReading) {
 }
 
 void Automobile::displayInfo() const {
-    std::cout << "Make: " << make << ", Model: " << model
-              << ", Year: " << year << ", Odometer: " << odometerReading << std::endl;
+    std::cout << "Make: " << make << ", Model: " << model<< ", Year: " << year << ", Odometer: " << odometerReading << std::endl;
 }
 
 ElectricCar::ElectricCar(const std::string& make, const std::string& model, int year, int odometerReading, double batteryCapacity)
