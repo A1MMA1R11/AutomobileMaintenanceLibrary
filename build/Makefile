@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named AutomobileMaintenanceApp
+
+# Build rule for target.
+AutomobileMaintenanceApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AutomobileMaintenanceApp
+.PHONY : AutomobileMaintenanceApp
+
+# fast build rule for target.
+AutomobileMaintenanceApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceApp.dir/build.make CMakeFiles/AutomobileMaintenanceApp.dir/build
+.PHONY : AutomobileMaintenanceApp/fast
+
+#=============================================================================
 # Target rules for targets named AutomobileMaintenanceLibrary
 
 # Build rule for target.
@@ -126,7 +139,7 @@ AutomobileMaintenanceLibrary: cmake_check_build_system
 
 # fast build rule for target.
 AutomobileMaintenanceLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make src/CMakeFiles/AutomobileMaintenanceLibrary.dir/build
 .PHONY : AutomobileMaintenanceLibrary/fast
 
 main.obj: main.cpp.obj
@@ -134,7 +147,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceApp.dir/build.make CMakeFiles/AutomobileMaintenanceApp.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -142,7 +155,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceApp.dir/build.make CMakeFiles/AutomobileMaintenanceApp.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,80 +163,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceApp.dir/build.make CMakeFiles/AutomobileMaintenanceApp.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-src/Automobile.obj: src/Automobile.cpp.obj
-.PHONY : src/Automobile.obj
-
-# target to build an object file
-src/Automobile.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/src/Automobile.cpp.obj
-.PHONY : src/Automobile.cpp.obj
-
-src/Automobile.i: src/Automobile.cpp.i
-.PHONY : src/Automobile.i
-
-# target to preprocess a source file
-src/Automobile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/src/Automobile.cpp.i
-.PHONY : src/Automobile.cpp.i
-
-src/Automobile.s: src/Automobile.cpp.s
-.PHONY : src/Automobile.s
-
-# target to generate assembly for a file
-src/Automobile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/src/Automobile.cpp.s
-.PHONY : src/Automobile.cpp.s
-
-src/MaintenanceLibrary.obj: src/MaintenanceLibrary.cpp.obj
-.PHONY : src/MaintenanceLibrary.obj
-
-# target to build an object file
-src/MaintenanceLibrary.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceLibrary.cpp.obj
-.PHONY : src/MaintenanceLibrary.cpp.obj
-
-src/MaintenanceLibrary.i: src/MaintenanceLibrary.cpp.i
-.PHONY : src/MaintenanceLibrary.i
-
-# target to preprocess a source file
-src/MaintenanceLibrary.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceLibrary.cpp.i
-.PHONY : src/MaintenanceLibrary.cpp.i
-
-src/MaintenanceLibrary.s: src/MaintenanceLibrary.cpp.s
-.PHONY : src/MaintenanceLibrary.s
-
-# target to generate assembly for a file
-src/MaintenanceLibrary.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceLibrary.cpp.s
-.PHONY : src/MaintenanceLibrary.cpp.s
-
-src/MaintenanceTask.obj: src/MaintenanceTask.cpp.obj
-.PHONY : src/MaintenanceTask.obj
-
-# target to build an object file
-src/MaintenanceTask.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceTask.cpp.obj
-.PHONY : src/MaintenanceTask.cpp.obj
-
-src/MaintenanceTask.i: src/MaintenanceTask.cpp.i
-.PHONY : src/MaintenanceTask.i
-
-# target to preprocess a source file
-src/MaintenanceTask.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceTask.cpp.i
-.PHONY : src/MaintenanceTask.cpp.i
-
-src/MaintenanceTask.s: src/MaintenanceTask.cpp.s
-.PHONY : src/MaintenanceTask.s
-
-# target to generate assembly for a file
-src/MaintenanceTask.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make CMakeFiles/AutomobileMaintenanceLibrary.dir/src/MaintenanceTask.cpp.s
-.PHONY : src/MaintenanceTask.cpp.s
 
 # Help Target
 help:
@@ -233,19 +174,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... AutomobileMaintenanceApp"
 	@echo "... AutomobileMaintenanceLibrary"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/Automobile.obj"
-	@echo "... src/Automobile.i"
-	@echo "... src/Automobile.s"
-	@echo "... src/MaintenanceLibrary.obj"
-	@echo "... src/MaintenanceLibrary.i"
-	@echo "... src/MaintenanceLibrary.s"
-	@echo "... src/MaintenanceTask.obj"
-	@echo "... src/MaintenanceTask.i"
-	@echo "... src/MaintenanceTask.s"
 .PHONY : help
 
 
