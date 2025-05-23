@@ -8,7 +8,8 @@
 #include "include/GasCar.h"
 #include "include/ElectricCar.h"
 
-void displayMenu() {
+void displayMenu()
+{
     std::cout << "\n==== Maintenance System Menu ====\n";
     std::cout << "1. Add Vehicle\n";
     std::cout << "2. Remove Vehicle\n";
@@ -22,7 +23,7 @@ void displayMenu() {
 
 std::shared_ptr<Automobile> createVehicle() {
     std::string type, make, model;
-    int year, mileage;
+    int year, odometerReading;
     double fuel;
 
     std::cout << "Enter vehicle type (electric/gas/diesel): ";
@@ -33,17 +34,17 @@ std::shared_ptr<Automobile> createVehicle() {
     std::cin >> model;
     std::cout << "Enter year: ";
     std::cin >> year;
-    std::cout << "Enter mileage: ";
-    std::cin >> mileage;
+    std::cout << "Enter Odometer Reading: ";
+    std::cin >> odometerReading;
     std::cout << "Enter battery/fuel capacity: ";
     std::cin >> fuel;
 
     if (type == "electric")
-        return std::make_shared<ElectricCar>(make, model, year, mileage, fuel);
+        return std::make_shared<ElectricCar>(make, model, year, odometerReading, fuel);
     else if (type == "gas")
-        return std::make_shared<GasCar>(make, model, year, mileage, fuel);
+        return std::make_shared<GasCar>(make, model, year, odometerReading, fuel);
     else if (type == "diesel")
-        return std::make_shared<DieselCar>(make, model, year, mileage, fuel);
+        return std::make_shared<DieselCar>(make, model, year, odometerReading, fuel);
     else
         std::cout << "Unknown vehicle type.\n";
     
@@ -60,10 +61,11 @@ std::shared_ptr<MaintenanceTask> createTask() {
     std::getline(std::cin, name);
     std::cout << "Enter task description: ";
     std::getline(std::cin, desc);
-    std::cout << "Enter number of applicable vehicle types: ";
+    std::cout << "Enter number of applicable vehicle types:(electric/gas/diesel) ";
     std::cin >> count;
 
-    for (int i = 0; i < count; ++i) {
+    for (int i = 0; i < count; ++i)
+    {
         std::string type;
         std::cout << "Enter type " << (i + 1) << " (electric/gas/diesel): ";
         std::cin >> type;
