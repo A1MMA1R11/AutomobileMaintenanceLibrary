@@ -1,6 +1,8 @@
 #include <iostream>
 #include <memory>
 #include <limits>
+#include <fstream>
+#include <ctime>
 #include "include/Automobile.h"
 #include "include/MaintenanceTask.h"
 #include "include/MaintenanceLibrary.h"
@@ -75,10 +77,49 @@ std::shared_ptr<MaintenanceTask> createTask() {
     return std::make_shared<MaintenanceTask>(name, desc, applicableTypes);
 }
 
+void backupVehicleDetails(std::shared_ptr<Automobile> vehicle, const std::vector<std::shared_ptr<MaintenanceTask>>& tasks) {
+    std::ofstream backupFile("vehicle_backup.txt", std::ios::app);
+    if (!backupFile) {
+        std::cerr << "Error opening backup file for writing.\n";
+        return;
+    }
+
+    // Get current date-time
+    std::time_t now = std::time(nullptr);
+    char buf[100];
+    if (std::strftime(buf, sizeof(buf), "%d-%m-%Y %H:%M:%S", std::localtime(&now))) {
+        backupFile << "Backup Date-Time: " << buf << "\n";
+    } else {
+        backupFile << "Backup Date-Time: Unknown\n";
+    }
+
+    // Write vehicle details
+    backupFile << "Vehicle Details:\n";
+    vehicle->displayInfo(backupFile);
+
+    // Write tasks details
+    backupFile << "Tasks Allocated:\n";
+    if (tasks.empty()) {
+        backupFile << "No tasks allocated.\n";
+    } else {
+        for (const auto& task : tasks) {
+            backupFile << "- " << task->getTaskName() << ": " << task->getDescription() << "\n";
+        }
+    }
+    backupFile << "--------------------------\n";
+
+    backupFile.close();
+}
+
 int main() {
     MaintenanceLibrary library;
     std::vector<std::shared_ptr<Automobile>> vehicles;
     std::vector<std::shared_ptr<MaintenanceTask>> tasks;
+
+    // Create default tasks
+    auto oilChangeTask = std::make_shared<MaintenanceTask>("OIL_CHANGE", "Change Engine Oil", std::vector<std::string>{"gas", "diesel"});
+    auto tireRotationTask = std::make_shared<MaintenanceTask>("TIRE_ROTATION", "Rotate Tires", std::vector<std::string>{"gas", "diesel"});
+    auto batteryInspectionTask = std::make_shared<MaintenanceTask>("BATTERY_INSPECTION", "Inspect Battery Health", std::vector<std::string>{"electric"});
 
     int choice;
     do {
@@ -91,6 +132,24 @@ int main() {
                 if (vehicle) {
                     library.addVehicle(vehicle);
                     vehicles.push_back(vehicle);
+
+                    // Add default tasks based on vehicle type
+                    std::string vehicleType;
+                    if (dynamic_cast<ElectricCar*>(vehicle.get())) {
+                        vehicleType = "electric";
+                    } else if (dynamic_cast<GasCar*>(vehicle.get())) {
+                        vehicleType = "gas";
+                    } else if (dynamic_cast<DieselCar*>(vehicle.get())) {
+                        vehicleType = "diesel";
+                    }
+
+                    if (vehicleType == "gas" || vehicleType == "diesel") {
+                        library.addMaintenanceTask(vehicle, oilChangeTask);
+                        library.addMaintenanceTask(vehicle, tireRotationTask);
+                    } else if (vehicleType == "electric") {
+                        library.addMaintenanceTask(vehicle, batteryInspectionTask);
+                    }
+
                     std::cout << "Vehicle added.\n";
                 }
                 break;
@@ -100,6 +159,16 @@ int main() {
                 std::cout << "Enter vehicle index to remove: ";
                 std::cin >> index;
                 if (index >= 0 && index < vehicles.size()) {
+                    std::cout << "Is the task completed? (y/n): ";
+                    char taskCompleted;
+                    std::cin >> taskCompleted;
+                    if (taskCompleted == 'y' || taskCompleted == 'Y') {
+                        auto tasksForVehicle = library.getTasksForVehicle(vehicles[index]);
+                        backupVehicleDetails(vehicles[index], tasksForVehicle);
+                        std::cout << "Vehicle details backed up.\n";
+                    } else {
+                        std::cout << "Removing vehicle\n";
+                    }
                     library.removeVehicle(vehicles[index]);
                     vehicles.erase(vehicles.begin() + index);
                     std::cout << "Vehicle removed.\n";
@@ -109,6 +178,7 @@ int main() {
                 break;
             }
             case 3: {
+                std::cout << "Listing vehicles \n";
                 library.listVehicles();
                 break;
             }

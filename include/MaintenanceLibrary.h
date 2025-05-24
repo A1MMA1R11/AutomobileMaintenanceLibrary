@@ -24,6 +24,8 @@ public:
     void addMaintenanceTask(std::shared_ptr<Automobile> vehicle, std::shared_ptr<MaintenanceTask> task);
     void removeMaintenanceTask(std::shared_ptr<Automobile> vehicle, std::shared_ptr<MaintenanceTask> task);
     void listMaintenanceTasks(std::shared_ptr<Automobile> vehicle) const;
+
+    std::vector<std::shared_ptr<MaintenanceTask>> getTasksForVehicle(std::shared_ptr<Automobile> vehicle) const;
 };
 
 #endif // MAINTENANCELIBRARY_H

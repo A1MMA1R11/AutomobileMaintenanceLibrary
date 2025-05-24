@@ -35,8 +35,9 @@ void MaintenanceLibrary::listVehicles() const {
         std::cout << "No vehicles in the library." << std::endl;
         return;
     }
-    for (const auto& vehicle : vehicles) {
-        vehicle->displayInfo();
+    for (size_t i = 0; i < vehicles.size(); ++i) {
+        std::cout << "Index " << i << ":\n";
+        vehicles[i]->displayInfo();
     }
 }
 
@@ -105,4 +106,12 @@ void MaintenanceLibrary::listMaintenanceTasks(std::shared_ptr<Automobile> vehicl
     for (const auto& task : tasks) {
         std::cout << "- " << task->getTaskName() << ": " << task->getDescription() << std::endl;
     }
+}
+
+std::vector<std::shared_ptr<MaintenanceTask>> MaintenanceLibrary::getTasksForVehicle(std::shared_ptr<Automobile> vehicle) const {
+    auto it = maintenanceTasks.find(vehicle);
+    if (it != maintenanceTasks.end()) {
+        return it->second;
+    }
+    return std::vector<std::shared_ptr<MaintenanceTask>>();
 }

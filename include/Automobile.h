@@ -22,6 +22,13 @@ public:
     void setOdometerReading(int newReading);
 
     virtual void displayInfo() const;
+
+    virtual void displayInfo(std::ostream& os) const {
+        os << "Make: " << make << "\n";
+        os << "Model: " << model << "\n";
+        os << "Year: " << year << "\n";
+        os << "Odometer Reading: " << odometerReading << "\n";
+    }
 };
 
 #endif // AUTOMOBILE_H
