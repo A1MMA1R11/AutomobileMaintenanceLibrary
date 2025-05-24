@@ -1,2 +1,0 @@
-C:/msys64/mingw64/bin/ar.exe qc libAutomobileMaintenanceLibrary.a CMakeFiles/AutomobileMaintenanceLibrary.dir/Automobile.cpp.obj CMakeFiles/AutomobileMaintenanceLibrary.dir/DieselCar.cpp.obj CMakeFiles/AutomobileMaintenanceLibrary.dir/ElectricCar.cpp.obj CMakeFiles/AutomobileMaintenanceLibrary.dir/GasCar.cpp.obj CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceLibrary.cpp.obj CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceTask.cpp.obj
-C:/msys64/mingw64/bin/ranlib.exe libAutomobileMaintenanceLibrary.a
