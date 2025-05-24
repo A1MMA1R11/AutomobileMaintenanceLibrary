@@ -40,5 +40,65 @@
   "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/AutomobileMaintenanceLibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceTask.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/MaintenanceTask.cpp",
   "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/MaintenanceTask.cpp",
   "output": "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceTask.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/tests",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/test_Automobile.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_Automobile.dir/test_Automobile.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_Automobile.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_Automobile.cpp",
+  "output": "tests/CMakeFiles/test_Automobile.dir/test_Automobile.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/tests",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/test_DieselCar.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_DieselCar.dir/test_DieselCar.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_DieselCar.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_DieselCar.cpp",
+  "output": "tests/CMakeFiles/test_DieselCar.dir/test_DieselCar.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/tests",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/test_ElectricCar.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_ElectricCar.dir/test_ElectricCar.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_ElectricCar.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_ElectricCar.cpp",
+  "output": "tests/CMakeFiles/test_ElectricCar.dir/test_ElectricCar.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/tests",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/test_GasCar.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_GasCar.dir/test_GasCar.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_GasCar.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_GasCar.cpp",
+  "output": "tests/CMakeFiles/test_GasCar.dir/test_GasCar.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/tests",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/test_MaintenanceLibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_MaintenanceLibrary.dir/test_MaintenanceLibrary.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_MaintenanceLibrary.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_MaintenanceLibrary.cpp",
+  "output": "tests/CMakeFiles/test_MaintenanceLibrary.dir/test_MaintenanceLibrary.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/tests",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/test_MaintenanceTask.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_MaintenanceTask.dir/test_MaintenanceTask.cpp.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_MaintenanceTask.cpp",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/tests/test_MaintenanceTask.cpp",
+  "output": "tests/CMakeFiles/test_MaintenanceTask.dir/test_MaintenanceTask.cpp.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-build/googlemock",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-build/googlemock",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-build/googletest",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+},
+{
+  "directory": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-build/googletest",
+  "command": "C:/msys64/mingw64/bin/g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -c C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
 }
 ]

@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	C:/msys64/mingw64/bin/cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	C:/msys64/mingw64/bin/cmake.exe -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	C:/msys64/mingw64/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	C:/msys64/mingw64/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	C:/msys64/mingw64/bin/cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	C:/msys64/mingw64/bin/cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/CMakeFiles C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build//CMakeFiles/progress.marks
@@ -142,6 +187,136 @@ AutomobileMaintenanceLibrary/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/AutomobileMaintenanceLibrary.dir/build.make src/CMakeFiles/AutomobileMaintenanceLibrary.dir/build
 .PHONY : AutomobileMaintenanceLibrary/fast
 
+#=============================================================================
+# Target rules for targets named test_Automobile
+
+# Build rule for target.
+test_Automobile: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_Automobile
+.PHONY : test_Automobile
+
+# fast build rule for target.
+test_Automobile/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_Automobile.dir/build.make tests/CMakeFiles/test_Automobile.dir/build
+.PHONY : test_Automobile/fast
+
+#=============================================================================
+# Target rules for targets named test_DieselCar
+
+# Build rule for target.
+test_DieselCar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_DieselCar
+.PHONY : test_DieselCar
+
+# fast build rule for target.
+test_DieselCar/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_DieselCar.dir/build.make tests/CMakeFiles/test_DieselCar.dir/build
+.PHONY : test_DieselCar/fast
+
+#=============================================================================
+# Target rules for targets named test_ElectricCar
+
+# Build rule for target.
+test_ElectricCar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ElectricCar
+.PHONY : test_ElectricCar
+
+# fast build rule for target.
+test_ElectricCar/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ElectricCar.dir/build.make tests/CMakeFiles/test_ElectricCar.dir/build
+.PHONY : test_ElectricCar/fast
+
+#=============================================================================
+# Target rules for targets named test_GasCar
+
+# Build rule for target.
+test_GasCar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_GasCar
+.PHONY : test_GasCar
+
+# fast build rule for target.
+test_GasCar/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_GasCar.dir/build.make tests/CMakeFiles/test_GasCar.dir/build
+.PHONY : test_GasCar/fast
+
+#=============================================================================
+# Target rules for targets named test_MaintenanceLibrary
+
+# Build rule for target.
+test_MaintenanceLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_MaintenanceLibrary
+.PHONY : test_MaintenanceLibrary
+
+# fast build rule for target.
+test_MaintenanceLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_MaintenanceLibrary.dir/build.make tests/CMakeFiles/test_MaintenanceLibrary.dir/build
+.PHONY : test_MaintenanceLibrary/fast
+
+#=============================================================================
+# Target rules for targets named test_MaintenanceTask
+
+# Build rule for target.
+test_MaintenanceTask: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_MaintenanceTask
+.PHONY : test_MaintenanceTask
+
+# fast build rule for target.
+test_MaintenanceTask/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_MaintenanceTask.dir/build.make tests/CMakeFiles/test_MaintenanceTask.dir/build
+.PHONY : test_MaintenanceTask/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -173,9 +348,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... AutomobileMaintenanceApp"
 	@echo "... AutomobileMaintenanceLibrary"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... test_Automobile"
+	@echo "... test_DieselCar"
+	@echo "... test_ElectricCar"
+	@echo "... test_GasCar"
+	@echo "... test_MaintenanceLibrary"
+	@echo "... test_MaintenanceTask"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

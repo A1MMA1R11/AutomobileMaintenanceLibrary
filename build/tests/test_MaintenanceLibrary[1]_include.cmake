@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/tests/test_MaintenanceLibrary[1]_tests.cmake")
+  include("C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/build/tests/test_MaintenanceLibrary[1]_tests.cmake")
+else()
+  add_test(test_MaintenanceLibrary_NOT_BUILT test_MaintenanceLibrary_NOT_BUILT)
+endif()
