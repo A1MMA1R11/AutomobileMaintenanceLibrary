@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/Automobile.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/Automobile.cpp.obj" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/Automobile.cpp.obj.d"
-  "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/DieselCar.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/DieselCar.cpp.obj" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/DieselCar.cpp.obj.d"
-  "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/ElectricCar.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/ElectricCar.cpp.obj" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/ElectricCar.cpp.obj.d"
-  "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/GasCar.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/GasCar.cpp.obj" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/GasCar.cpp.obj.d"
-  "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/MaintenanceLibrary.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceLibrary.cpp.obj" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceLibrary.cpp.obj.d"
-  "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/src/MaintenanceTask.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceTask.cpp.obj" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceTask.cpp.obj.d"
+  "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/src/Automobile.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/Automobile.cpp.o" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/Automobile.cpp.o.d"
+  "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/src/DieselCar.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/DieselCar.cpp.o" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/DieselCar.cpp.o.d"
+  "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/src/ElectricCar.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/ElectricCar.cpp.o" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/ElectricCar.cpp.o.d"
+  "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/src/GasCar.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/GasCar.cpp.o" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/GasCar.cpp.o.d"
+  "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/src/MaintenanceLibrary.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceLibrary.cpp.o" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceLibrary.cpp.o.d"
+  "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/src/MaintenanceTask.cpp" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceTask.cpp.o" "gcc" "src/CMakeFiles/AutomobileMaintenanceLibrary.dir/MaintenanceTask.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

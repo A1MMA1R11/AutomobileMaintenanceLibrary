@@ -1,0 +1,5 @@
+add_test([=[AutomobileTest.ConstructorAndGetters]=]  /home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_Automobile [==[--gtest_filter=AutomobileTest.ConstructorAndGetters]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AutomobileTest.ConstructorAndGetters]=]  PROPERTIES WORKING_DIRECTORY /home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[AutomobileTest.SetOdometerReading]=]  /home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_Automobile [==[--gtest_filter=AutomobileTest.SetOdometerReading]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AutomobileTest.SetOdometerReading]=]  PROPERTIES WORKING_DIRECTORY /home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test_Automobile_TESTS AutomobileTest.ConstructorAndGetters AutomobileTest.SetOdometerReading)

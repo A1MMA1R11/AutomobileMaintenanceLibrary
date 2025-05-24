@@ -1,0 +1,5 @@
+if(EXISTS "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_ElectricCar[1]_tests.cmake")
+  include("/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_ElectricCar[1]_tests.cmake")
+else()
+  add_test(test_ElectricCar_NOT_BUILT test_ElectricCar_NOT_BUILT)
+endif()

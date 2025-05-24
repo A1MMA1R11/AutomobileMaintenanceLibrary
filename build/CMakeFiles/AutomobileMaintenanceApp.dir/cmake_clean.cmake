@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/bin/AutomobileMaintenanceApp.exe"
-  "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/bin/AutomobileMaintenanceApp.exe.manifest"
-  "C:/Users/a1mma/OneDrive/Desktop/KPIT/AutomobileMaintenanceLibrary/bin/AutomobileMaintenanceApp.pdb"
-  "CMakeFiles/AutomobileMaintenanceApp.dir/main.cpp.obj"
-  "CMakeFiles/AutomobileMaintenanceApp.dir/main.cpp.obj.d"
-  "libAutomobileMaintenanceApp.dll.a"
+  "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/bin/AutomobileMaintenanceApp"
+  "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/bin/AutomobileMaintenanceApp.pdb"
+  "CMakeFiles/AutomobileMaintenanceApp.dir/main.cpp.o"
+  "CMakeFiles/AutomobileMaintenanceApp.dir/main.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

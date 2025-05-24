@@ -1,0 +1,5 @@
+if(EXISTS "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_MaintenanceLibrary[1]_tests.cmake")
+  include("/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_MaintenanceLibrary[1]_tests.cmake")
+else()
+  add_test(test_MaintenanceLibrary_NOT_BUILT test_MaintenanceLibrary_NOT_BUILT)
+endif()

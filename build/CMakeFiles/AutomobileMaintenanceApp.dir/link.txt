@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/AutomobileMaintenanceApp.dir/main.cpp.o -o /home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/bin/AutomobileMaintenanceApp  src/libAutomobileMaintenanceLibrary.a 
