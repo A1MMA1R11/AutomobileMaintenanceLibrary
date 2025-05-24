@@ -1,5 +1,0 @@
-if(EXISTS "/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_Automobile[1]_tests.cmake")
-  include("/home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_Automobile[1]_tests.cmake")
-else()
-  add_test(test_Automobile_NOT_BUILT test_Automobile_NOT_BUILT)
-endif()

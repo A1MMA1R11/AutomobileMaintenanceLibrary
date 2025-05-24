@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/test_MaintenanceLibrary.dir/test_MaintenanceLibrary.cpp.o -o test_MaintenanceLibrary  ../lib/libgtest_main.a ../src/libAutomobileMaintenanceLibrary.a ../lib/libgtest.a 

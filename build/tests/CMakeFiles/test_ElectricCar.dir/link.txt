@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/test_ElectricCar.dir/test_ElectricCar.cpp.o -o test_ElectricCar  ../lib/libgtest_main.a ../src/libAutomobileMaintenanceLibrary.a ../lib/libgtest.a 

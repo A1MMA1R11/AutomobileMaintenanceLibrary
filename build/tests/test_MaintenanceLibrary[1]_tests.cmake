@@ -1,5 +1,0 @@
-add_test([=[MaintenanceLibraryTest.AddAndListVehicles]=]  /home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_MaintenanceLibrary [==[--gtest_filter=MaintenanceLibraryTest.AddAndListVehicles]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[MaintenanceLibraryTest.AddAndListVehicles]=]  PROPERTIES WORKING_DIRECTORY /home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[MaintenanceLibraryTest.AddAndListMaintenanceTasks]=]  /home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests/test_MaintenanceLibrary [==[--gtest_filter=MaintenanceLibraryTest.AddAndListMaintenanceTasks]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[MaintenanceLibraryTest.AddAndListMaintenanceTasks]=]  PROPERTIES WORKING_DIRECTORY /home/cybernaut/kpit-nova/AutomobileMaintenanceLibrary/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  test_MaintenanceLibrary_TESTS MaintenanceLibraryTest.AddAndListVehicles MaintenanceLibraryTest.AddAndListMaintenanceTasks)
